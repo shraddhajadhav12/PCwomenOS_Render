@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>PCwomenOS - Ultrasound Test</title>
+    <style>
+        .cust-btn {
+            padding: 20px;
+            background-color: #f88fa0;
+        }
+
+        .submit-btn {
+            padding: 20px;
+            
+        }
+
+        
+    </style>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="../static/logo-1.jpeg" rel="icon">
+    <!-- <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="../static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../static/assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="../static/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="../static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="../static/main.css" rel="stylesheet">
+
+    <!-- =======================================================
+  * Template Name: Impact
+  * Updated: Mar 10 2023 with Bootstrap v5.2.3
+  * Template URL: https://bootstrapmade.com/impact-bootstrap-business-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+    <header id="header" class="header d-flex align-items-center">
+        <div id="google_element"></div>
+        <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+        <script>
+          function loadGoogleTranslate(){
+            new google.translate.TranslateElement("google_element")
+          }
+        </script>
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+            <a href="./index.html" class="logo d-flex align-items-center">
+                <!-- Uncomment the line below if you also wish to use an image logo -->
+                <img class="rounded-circle" src="../static/logo-1.jpeg" alt="logo" width="50" height="50">
+                <h1><i><span>PCwomenOS</span></i></h1>
+            </a>
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a href="index.html#hero">Home</a></li>
+                    <li><a href="text-test.html">Self Diagnostic Test</a></li>
+                    <li><a href="image-test.html">Ultrasound Test</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#testimonials">Reviews</a></li>
+                    <li><a href="index.html#team">Team</a></li>
+                </ul>
+            </nav><!-- .navbar -->
+
+            <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+            <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+        </div>
+    </header><!-- End Header -->
+    <!-- End Header -->
+
+    <!-- End Our Team Section -->
+
+    <div class="breadcrumbs">
+        <div class="page-header d-flex align-items-center" style="background-image: url('');">
+            <div class="container position-relative">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-6 text-center">
+                        <h2><i><span>Ultrasound Test</span></i></h2>
+                        <p>Please upload the ovary ultrasound scanned image</p>
+                        <div class="container-fluid">
+                            <img src="../static/ultrasound-removebg-preview.png"
+                                alt="Ultrasound" width="350px" height="300px" />
+                            <div class="justify-content-center">
+                                <div class="cust-btn">
+                                    <form action="prediction" method="post" enctype="multipart/form-data">
+                                        <label class="form-label text-white m-1" for="customFile1">Choose file</label>
+                                        <input type="file" name="img" id="file" onchange="return fileValidation()" required />
+                                        <!-- <div id="imagePreview"></div> -->
+    
+
+                                        <script>
+                                            function fileValidation() {
+                                                var fileInput =
+                                                    document.getElementById('file');
+                                                    
+                                                var filePath = fileInput.value;
+
+                                                // Allowing file type
+                                                var allowedExtensions =
+                                                    /(\.jpg|\.jpeg|\.png)$/i;
+
+                                                if (!allowedExtensions.exec(filePath)) {
+                                                    alert('Invalid file type');
+                                                    fileInput.value = '';
+                                                    return false;
+                                                }
+                                            }
+                                        </script>
+                                        <div>
+                                            <!-- <input type="submit" name="btn"> -->
+                                            <input type="submit" value="Submit" class="button1">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ======= Footer ======= -->
+        <footer id="footer" class="footer">
+            <div class="container">
+                <div class="copyright">
+                    &copy; Copyright <strong><span>PCwomenOS</span></strong>. All Rights Reserved
+                </div>
+                <div class="credits">
+                    <!-- All the links in the footer should remain intact. -->
+                    <!-- You can delete the links only if you purchased the pro version. -->
+                    <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                    <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/impact-bootstrap-business-website-template/ -->
+                    <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+                </div>
+            </div>
+
+        </footer><!-- End Footer -->
+        <!-- End Footer -->
+
+        <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+                class="bi bi-arrow-up-short"></i></a>
+
+        <div id="preloader"></div>
+
+        <!-- Vendor JS Files -->
+        <script src="../static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="../static/assets/vendor/aos/aos.js"></script>
+        <script src="../static/assets/vendor/glightbox/js/glightbox.min.js"></script>
+        <script src="../static/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+        <script src="../static/assets/vendor/swiper/swiper-bundle.min.js"></script>
+        <script src="../static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+        <script src="../static/assets/vendor/php-email-form/validate.js"></script>
+
+        <!-- Template Main JS File -->
+        <script src="../static/assets/js/main.js"></script>
+
+</body>
+
+</html>
