@@ -1,6 +1,9 @@
 Thanks for downloading this template!
 
-Template Name: Impact
-Template URL: https://bootstrapmade.com/impact-bootstrap-business-website-template/
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
+Website Link : https://pcwomenos-team.onrender.com/
+
+Project Overview : Polycystic Ovary Syndrome (PCOS) is a disease that poses a serious threat to women’s health in the 21st century. Although it occurs rarely, it can lead to permanent infertility and gynecological cancer. PCOS is characterized by the overproduction of a hormone called androgen. The tradi- tional method for detecting PCOS involved manual examination of ultrasound images and follicle properties, which was time-consuming and prone to errors. To address this issue, a new system has  been proposed to detect PCOS using advanced technology. The proposed system comprises two modules: the first module applies CNNs to ultrasound images, while the second module develops a semi-supervised learning-based PCOS test. By automating the PCOS detection process, the proposed system offers a faster, more accurate, and simpler alternative to the traditional method. It is expected to enhance the diagnosis and treatment of PCOS, thus improving women’s health outcomes.
+
+Conclusion : During these project data science life cycle was followed starting from problem identifica- tion ,literature review was studies ,design of system architecture was done ,chose the accurate ML model for text data processing and CNN model for image data processing, suggested the nearest gynecologist if the user got detected with pcos and some other helps are provided such as how to maintain the healthy lifestyle , what are the natural remedies to recover from the pcos are suggested to user. Multiple machine learning algorithms are used to train the model for text modules such as logistic regression, random forest,decision tree, naive bayes and KNN algorithm . Outoff all these algorithms KNN gives the highest accuracy of 97.06% and it was used for prediction purposes . For the ultrasound image test module VGG- 16,resnet model is used in which VGG16 gives the accuracy of 95% and it was selected for image module prediction. By completing all the above mentioned modules an end goal of the project is achieved.
+
+Acheivements : This project leads us aby securing First rank in Ideathon and ProjectExpo Competition.
